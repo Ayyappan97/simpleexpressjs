@@ -17,3 +17,5 @@ CMD npm start
 EXPOSE 3000
 
 ENTRYPOINT ["node", "index.js"]
+
+
