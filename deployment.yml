@@ -16,7 +16,7 @@ spec:
         tier: web
     spec:
       containers:
-      - name: hello-app
-        image: gcr.io/chromatic-tree-278610/ayyappanhsr:1.0
+      - name: hello-app1
+        image: gcr.io/chromatic-tree-278610/ayyappanhsr
         ports:
-        - containerPort: 8080
+        - containerPort: 8083

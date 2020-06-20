@@ -4,19 +4,19 @@ cd /simpleexpressjs - Switcing to my index.js path inside my container
 
 export PROJECT_ID=chromatic-tree-278610 = To use my GCP Project ID which I am currently working on
 
-docker build -t gcr.io/${PROJECT_ID}/dockerfile:v1 . Image Build using my DockerFile
+docker build -t gcr.io/${PROJECT_ID}/ayyappan97:v1 . Image Build using my DockerFile
 
 docker images - To List all docker images
 
-docker run --rm -p 8080:3000 gcr.io/${PROJECT_ID}/dockerfile:v1 To run the docker image
+docker run --rm -p 8085:3000 gcr.io/${PROJECT_ID}/ayyappan97:v1 To run the docker image
 
-curl http://localhost:8080 To check whether is working inside the container
+curl http://localhost:8085 To check whether is working inside the container
 
 gcloud auth configure-docker - Login to GIR Google Image registry
 
-docker push gcr.io/${PROJECT_ID}/dockerfile:v1 - Push my image into GCR
+docker push gcr.io/${PROJECT_ID}/ayyappan97:v1 - Push my image into GCR
 
-kubectl create deployment hello-app --image=gcr.io/${PROJECT_ID}/dockerfile:v1 - To create deployment using YAML config
+kubectl create deployment hello-app --image=gcr.io/${PROJECT_ID}/ayyappan97:v1 - To create deployment using YAML config
 
 
 kubectl get pods - To List the pods
