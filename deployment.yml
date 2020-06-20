@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: hello-app
-        image: gcr.io/chromatic-tree-278610/dockerfile:1.0
+        image: gcr.io/chromatic-tree-278610/ayyappanhsr:1.0
         ports:
         - containerPort: 8080
