@@ -6,9 +6,9 @@ FROM node:latest
 
 RUN git clone https://github.com/Ayyappan97/simpleexpressjs.git
 
-COPY . /opt
+#COPY . /opt
 
-WORKDIR /opt/simpleexpressjs
+WORKDIR /simpleexpressjs
 
 CMD npm install express
 
